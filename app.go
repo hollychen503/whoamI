@@ -45,7 +45,7 @@ func main() {
 	log.Println("htpasswd:", filePath)
 	http.HandleFunc("/echo", echoHandler)
 	http.HandleFunc("/bench", benchHandler)
-	http.HandleFunc("/", whoamI)
+	http.HandleFunc("/", api)
 
 	http.HandleFunc("/check", whoAreU)
 	http.HandleFunc("/reject", reject)
